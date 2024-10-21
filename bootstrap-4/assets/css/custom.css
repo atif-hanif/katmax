@@ -1,0 +1,55 @@
+:root {
+    --first-color: #0766AD;
+    --second-color: #29ADB2;
+    --third-color: #124E66;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --font-family: 'Josefin Sans';
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+body.offcanvas-active {
+	overflow: hidden;
+}
+
+.offcanvas-header { 
+    display:none; 
+}
+
+.topbar {
+    background-color: var(--first-color);
+    height: 42px;
+    padding: 10px 0px;
+}
+
+.menu {
+    padding: 10px 0px;
+}
+
+.navbar-toggler {
+    background-color: var(--third-color);
+}
+
+.menu a {
+    color: var(--first-color);
+}
+
+.menu a.active {
+    color: var(--second-color);
+}
+
+.custom-btn {
+    background-color: var(--third-color);
+    border-color: var(--third-color);
+}
